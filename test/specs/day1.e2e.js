@@ -6,7 +6,10 @@ describe('Login to the website', async() => {
          // await - like communicating with a browser or device
          //Without await, your code would move to the next line immediately, without waiting for the command to finish.
          //Using await pauses the execution until the command completes, ensuring steps happen in the right order.
-    await browser.url('https://www.orangehrm.com/en/book-a-free-demo');
+    await browser.setTimeout({ 'pageLoad': 120000 });
+    console.log('Navigating to demo page...');
+await browser.url('https://www.orangehrm.com/en/book-a-free-demo');
+console.log('Navigation complete');
 
    //Find the element by xpath
     const firstName = await $('//*[@id="Form_getForm_FullName"]')
@@ -57,6 +60,6 @@ describe('Login to the website', async() => {
     // const demoButton = await $('//input[@value="Get a Free Demo"]');
     // await demoButton.click();
 
-    })
+    }, 120000)
 
 })

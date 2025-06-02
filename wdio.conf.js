@@ -14,7 +14,7 @@ hostname: 'localhost',
    injectGlobals: true,
   
    specs: [
-  './test/specs/day2.e2e.js'
+  './test/specs/day1.e2e.js'
 ],
     // Patterns to exclude.
     exclude: [
@@ -26,8 +26,8 @@ hostname: 'localhost',
 
   capabilities: [{
     platformName: "Android",
-    "appium:platformVersion": "13",
-    "appium:deviceName": "Pixel_9_Pro",
+    "appium:platformVersion": "16",
+    'appium:deviceName': 'emulator-5554',
     "appium:automationName": "UiAutomator2",
     "appium:browserName": "Chrome",
     "appium:webSocketUrl": false,
@@ -112,10 +112,11 @@ hostname: 'localhost',
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 120000
     },
 
-    //
+
+
     // =====
     // Hooks
     // =====
