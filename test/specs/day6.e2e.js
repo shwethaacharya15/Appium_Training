@@ -16,7 +16,7 @@ const downloadFileUsingAppium = async (driver) => {
   await driver.pause(5000);
 
   // Define expected filename
-  const filename = 'sample.txt';  // Change to actual downloaded file name
+  const filename = 'sample.txt'; 
   const downloadPath = `/sdcard/Download/${filename}`;
 
   // List files in Download folder

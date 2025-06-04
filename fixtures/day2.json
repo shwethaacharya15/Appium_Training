@@ -1,0 +1,11 @@
+{
+    "dropdown1": "Python",
+    "dropdown2": "Maven",
+    "dropdown3": "JQuery",
+    "checkboxes": {
+        "option1": "option-1",
+        "option2": "option-2",
+        "option3": "option-3"
+    },
+    "radio": "green"
+}
