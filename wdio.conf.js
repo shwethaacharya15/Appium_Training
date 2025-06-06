@@ -14,7 +14,7 @@ hostname: 'localhost',
    injectGlobals: true,
   
    specs: [
-  './test/specs/day2.e2e.js'
+  './test/specs/day7.e2e.js'
 ],
     // Patterns to exclude.
     exclude: [
